@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Javascript</h1>
+        <hr>
+        <div>
+            <h2>Como iniciar</h2>
+            <p>Para trabajar con JS debemos tener un HTML en el cual cargarlo, y acontinuacion
+                 tenemos 2 alternativas para integrarlo al HTML, <br>
+                 1. Escribir codigo dentro de la etiqueta <strong>script</strong> de html (No se recomienda) <br>
+                 2. Enlazar un archivo JS externo con el atributo src de la etiqueta script indicando la ruta relativa del 
+                 archivo js, es la forma mas recomendada y optima lo ideal es cargarlo al final del archivo, 
+                 por el orden de lectura del HTML y Javascript.
+            </p>
+        </div>
+
+        <div>
+            <h2>Variables</h2>
+            <p>Son espacios en memoria donde se guarda informacion, para concatenar los valores de las variables se usa +
+
+            </p>
+            <div class="alert alert-dark">
+                <samp>
+                  var nombre = "faber";<br>
+                  var edad = 165;<br>
+                  var concatenacion = nombre + " " + altura;<br>
+                  document.write(concatenacion); // Esto imprime en el DOM (faber 165)<br><hr>
+
+                  var datos = document.getElementById("datos"); // Se capturan un contenedor HTML con la clase datos<br>
+                  datos.<br>
+                  datos.innerHTML = nombre + " " + estatura;  // Esto imprime en el contenedor  (faber 165) a este metodo se le llama template string<br>
+                  <hr>
+                  Con el operador (+=) concatenamos el nuevo contenido al ya existente en el contenedor 
+                  a diferencia de (=) que remplaza todo el contenido
+                </samp>
+              </div>
+              <div id="datos">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia placeat recusandae non natus consequatur ut commodi culpa facilis aspernatur es</p>
+
+              </div>
+
+        </div>
+        
+    </div>    
+    <script src="js/index.js"></script> 
+    </body>
+</html>
