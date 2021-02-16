@@ -7,3 +7,10 @@ function imprimir() {
     datos.innerHTML = nombre + " " + estatura;
     datos.innerHTML += "<h1> Soy: " + nombre + "</h1>";/* Concatena con ek HTML ya existente */
 }
+var coche = {
+    moodelo :2020,
+    marca:"mercedes",
+    atributo: "valor"
+    };
+
+    document.write(coche.marca);
