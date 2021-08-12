@@ -7,8 +7,8 @@ function imprimir() {
     datos.innerHTML = nombre + " " + estatura;
     datos.innerHTML += "<h1> Soy: " + nombre + "</h1>";/* Concatena con ek HTML ya existente */
 }
-/*Objeto Literal */
 
+/*Objeto Literal */
 var coche = {
     moodelo :2020,
     marca:"mercedes",
@@ -22,3 +22,27 @@ var coche = {
 console.log(coche);
 document.write(coche.marca);
 coche.mostrarDatos();
+
+//Promesas
+var saludar = new Promise((resolve, reject) => {  /*resolve=> resultado   reject=>error, no hay resultado */
+
+    setTimeout(() => { /*Espera segundos a que algo se ejecute */ 
+
+        let saludo = false;
+
+        if(saludo){
+            resolve(saludo);
+        }else{
+            reject('no hay saludo disponible')
+        }
+
+    },2000)  
+})
+
+/*Procesando el resultado de la promesa */
+saludar.then(resultado =>{
+    alert(resultado);
+})
+.catch(error =>{    //captura el posible error
+    alert(error);
+});

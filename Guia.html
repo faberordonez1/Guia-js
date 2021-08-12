@@ -9,9 +9,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Javascript</h1>
-        <hr>
         <div>
+            <img src="/image/logo js.svg" width="150px" alt="logo javascript">
+            <h1>Javascript</h1>
+        </div>
+        <hr>
+        <div> <!-- Como iniciar-->
             <h2>Como iniciar</h2>
             <p>Para trabajar con JS debemos tener un HTML en el cual cargarlo, y acontinuacion
                  tenemos 2 alternativas para integrarlo al HTML, <br>
@@ -22,7 +25,7 @@
             </p>
         </div>
 
-        <div>
+        <div><!-- Variables-->
             <h2>Variables</h2>
             <p>Son espacios en memoria donde se guarda informacion, para concatenar los valores de las variables se usa +
 
@@ -42,43 +45,65 @@
                   a diferencia de (=) que remplaza todo el contenido
                 </samp>
               </div>
-            </div>
+        </div>
             
-            <div>
-                <h2>JSON u Objetos literales</h2>
-                <p>La siguiente es la estructura de un  Objeto literal o JSON</p>
-                <div class="alert alert-dark">
-                    <pre>
+        <div><!--JSON u Objetos literales -->
+            <h2>JSON u Objetos literales</h2>
+            <p>La siguiente es la estructura de un  Objeto literal o JSON</p>
+            <div class="alert alert-dark">
+                <pre>
 var coche = {
-    moodelo :2020,
-    marca:"mercedes",
-    atributo: "valor",
-    
-    mostrarDatos(){ //tambien permite funciones
-    console.log(this.moodelo + " " + this.marca) //code
-    }
+moodelo :2020,
+marca:"mercedes",
+atributo: "valor",
+
+mostrarDatos(){ //tambien permite funciones
+console.log(this.moodelo + " " + this.marca) //code
+}
 };
 
 console.log(coche); //Muestra toda la estructura del objeto
 document.write(coche.marca);//imprime el atributo marca del objeto coche en el DOM
 coche.mostrarDatos();invoca el metodo mostrarDatos del objeto, la forma anterior no funciona para métodos
-                        </pre>
-                </div>
+                </pre>
             </div>
+        </div>
 
-            <div>
-                <h2>Promesas</h2>
-                <p>Es un objeto que representa la terminación o el fracaso de una operación asíncrona Ajax,
-                     Nos retorna un valor o si falla un error
-                </p>
+        <div><!--Promesas -->
+            <h2>Promesas</h2>
+            <p>Es un objeto que permite procesar el resultado, terminación o fracaso de una petición asíncrona Ajax que tarda en dar respuesta, Nos retorna un valor o si falla un error, permite procesarlo de forma asincrona cuando llegue ese valor.</p>
+            <ul>
+                <li><strong>resolve: </strong>resultado</li>
+                <li><strong>reject: </strong>error, no hay resultado</li>
+                <li><strong>setTimeout: </strong>Tiempo de espera milisegundos a que algo se ejecute</li>
+            </ul>
+            <p>Declaracion de la promesa</p>
+            <pre class="alert alert-dark"><!--Declaración -->
+var saludar = new Promise((resolve, reject) => {
 
-                <div class="alert alert-dark">
-                    <samp>
+    setTimeout(() => {    //Tiempo de ejecución 
 
-                    </samp>
-                </div>
-                
-            </div>
+        let saludo = "Hola Mundo";
+
+        if(saludo){
+            resolve(saludo);
+        }else{
+            reject('no hay saludo disponible')
+        }
+    },2000)  
+})
+            </pre>
+            <p>Procesando el resultado</p>
+
+            <pre class="alert alert-dark"><!--Procesando resultado-->
+saludar.then(resultado =>{   //.then Procesa el resultado
+    alert(resultado);
+})
+.catch(error =>{   //.catch opcional captura el posible error
+    alert(error);
+});            
+            </pre>
+        </div>
         
     </div>    
     </body>
