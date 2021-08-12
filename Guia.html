@@ -46,16 +46,23 @@
             
             <div>
                 <h2>JSON u Objetos literales</h2>
-                <p>La siguiente es la estatura de un  JSON</p>
+                <p>La siguiente es la estructura de un  Objeto literal o JSON</p>
                 <div class="alert alert-dark">
-                    <samp>
-                        var coche = {<br>
-                            moodelo :2020,<br>
-                            marca:"mercedes",<br>
-                            atributo: "valor"<br>
-                        };<hr>
-                        document.write(coche.marca);
-                    </samp>
+                    <pre>
+var coche = {
+    moodelo :2020,
+    marca:"mercedes",
+    atributo: "valor",
+    
+    mostrarDatos(){ //tambien permite funciones
+    console.log(this.moodelo + " " + this.marca) //code
+    }
+};
+
+console.log(coche); //Muestra toda la estructura del objeto
+document.write(coche.marca);//imprime el atributo marca del objeto coche en el DOM
+coche.mostrarDatos();invoca el metodo mostrarDatos del objeto, la forma anterior no funciona para métodos
+                        </pre>
                 </div>
             </div>
 

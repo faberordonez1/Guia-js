@@ -7,10 +7,18 @@ function imprimir() {
     datos.innerHTML = nombre + " " + estatura;
     datos.innerHTML += "<h1> Soy: " + nombre + "</h1>";/* Concatena con ek HTML ya existente */
 }
+/*Objeto Literal */
+
 var coche = {
     moodelo :2020,
     marca:"mercedes",
-    atributo: "valor"
-    };
+    atributo: "valor",
 
-    document.write(coche.marca);
+    mostrarDatos(){
+        console.log(this.moodelo + " " + this.marca)
+    }
+};
+
+console.log(coche);
+document.write(coche.marca);
+coche.mostrarDatos();
