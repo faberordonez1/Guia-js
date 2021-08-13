@@ -140,6 +140,33 @@ console.log(coche1.velocidad); //Muestra modelo del coche por consola
 document.write(coche1.marca); //Muestra modelo del coche en el DOM
             </pre>
         </div>
+
+        <div><!--Herencia POO -->
+            <h2>22.Herencia en POO</h2>
+            <p>Es la opcion de crear una nueva clase que hereda todas las propiedades de la clase padre ya creada, tambien permite agregar nuevas propiedades a parte de las ya heredadas</p>
+            <ul>
+                <li><strong>super </strong>palabra clave que invoca el constructor de la clase padre</li>
+            </ul>
+            <p>Creando la clase heredada</p>
+            <pre class="alert alert-dark"><!--Declaración clase Heredada -->
+//Heredando Autobus de la clase coche
+class Autobus extends Coche {
+    constructor( marca, velocidad, modelo ) {
+        super( marca, velocidad, modelo );  //Invoca al constructor de la clase padre
+        this.altura = 6;  //Define un nuevo atributo a la clase heredada 
+    }
+
+    mostrasAltura() {  //define un nuevo método
+        console.log("La altura del Autobus es " + this.altura);
+    }
+}
+
+//Definiendo un objeto con la clase heredada
+autobus1.aumentarVelocidad(); //Ejecuta el método heredado
+autobus1.mostrarAltura();  //Ejecutando el nuevo método de la clase heredada
+console.log(autobus1.velocidad);  //imprime un atributo
+            </pre>
+        </div>
         
     </div>    
     </body>
