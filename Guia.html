@@ -104,6 +104,42 @@ saludar.then(resultado =>{   //.then Procesa el resultado
 });            
             </pre>
         </div>
+
+        <div><!--Clases -->
+            <h2>Clases en POO</h2>
+            <p>Es basicamente una plantilla que sirve para crear o definir varios objetos, con las caracteristicas definidas en la misma, estan compuestas por metodos y su método principal siempre es el constructor</p>
+            <ul>
+                <li><strong>constructor: </strong>metodo inicial de la clase, donde se definen los atributos o caracteristicas, puede recibir parametros</li>
+                <li><strong>Métodos generales: </strong>Es donde se definen las funciones o acciones que puede hacer la clase</li>
+                <li><strong>Parametros: </strong>Valores que recibe un método</li>
+            </ul>
+            <p>Creando la clase</p>
+            <pre class="alert alert-dark"><!--Declaración clase -->
+class Coche{
+
+    constructor(marca,velocidad,modelo){
+        this.marca = marca,
+        this.velocidad= velocidad,
+        this.modelo = modelo;
+    }
+    aumentarVelocidad(){
+        this.velocidad += 1;
+    }
+    reducirVelocidad(){
+        this.velocidad -=1;    }
+}
+
+// Definiendo el objeto con base a la clase
+var coche1 = new Coche("BMV",150,2022); 
+var coche2 = new Coche("Mazda",200,2020);
+
+coche1.aumentarVelocidad();  //Modificando los atributos del objeto usando los métodos
+
+console.log(coche1);  //Muestra el objeto por consola
+console.log(coche1.velocidad); //Muestra modelo del coche por consola
+document.write(coche1.marca); //Muestra modelo del coche en el DOM
+            </pre>
+        </div>
         
     </div>    
     </body>

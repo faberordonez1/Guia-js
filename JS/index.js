@@ -46,3 +46,5 @@ saludar.then(resultado =>{
 .catch(error =>{    //captura el posible error
     alert(error);
 });
+
+sc
