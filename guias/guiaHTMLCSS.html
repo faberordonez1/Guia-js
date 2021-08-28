@@ -41,24 +41,44 @@
         <div> <!--Responsive Web Design-->
             <h2>Responsive Web Design</h2>
             <p>
-                Técnicas para adaptar un sitio web a los diferentes tipos de pantallas
+                Técnicas para adaptar un sitio web a los diferentes tipos de pantallas, ya que existen diferentes densidad de pixelees y tamaños de pantalla
             </p>
-            <h3>Patrones Responsive</h3>
-            
+            <h4>Patrones Responsive</h4>
+            <ol>
+                <li>Mostly Fluid</li>
+                <li>Colocacion de Columnas</li>
+                <li>Layaout Shifter</li>
+                <li>Tiny Tweks</li>
+                <li>Off Canvas (Menú de hamburguesa)</li>
+            </ol>
+            <p>
+                Para consultar sobre patrones de diseño ingresar a <a href="https://mediaqueri.es">mediaqueri.es</a>
+                
+            </p>
+
+            <h4>Portrait - Landscape</h4>
+            <p>Este concepto se utiliza para definir el modo de pantalla, generalmente se refiere a como se esta utilizando la pantalla, en forma vertical(Portrait) u Horizontal (Landscape)</p>
+
+            <h4>Mobil First o Desktop First</h4>
+            <p>Es el modo como se abordara el resposive design, empezar de menor a mayor (Mobile first) tamaño de pantalla o mayor a menor (Desktop first)</p>
+
+            <h4>Developers Tools F12</h4>
+            <P>Estas herramientas vienen integradas en los navegadores para facilitar el desarrollo web, entre ellas tenemos la siguientes</P>
+            <ul>
+                <li><strong>Desplegable Superior</strong> Permite cambiar entre tamaños de pantalla ya definidos o de forma libre (resize)</li>
+                <li><strong>Zoom Superior</strong>Permite alejar o acercar el tamaño de pantallas</li>
+                <li><strong>Boton rotacion</strong>Este boton permite cambiar entre portrait y Landscape</li>
+                <li><strong>3 Puntos superiores</strong> Esta opcion nos permite acceder a las reglas, tambien nos permite mostrar los mediaqueris del sitio (Azul Max width, Rangos Verde, Naranja Min-width)y la seccion de capturas de pantalla entre otras</li>
+            </ul>
+
+            <h4>Metaviewport</h4>
+            <p><strong>Viewport </strong>Es el area visible del navegador</p>
+            <p>Metaviewport es la etiqueta de metadatos que permite adaptar el contendio de forma adecuada, segun el tipo de pantalla, ya que sin esta etiqueta,  el contenido se reescala para intentar mostrarse como si fuera PC y el website posiblemente no sea legible</p>
+
 
             <pre class="alert alert-dark"><!-- -->
-&lt;!DOCTYPE html&gt;
-&lt;html lang="es"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Hola soy el titulo&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    
-&lt;/body&gt;
-&lt;/html&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+Width=> Ancho  initiaL-scale =>Zoom Rango (0 a 1)
              </pre>
         </div>
 

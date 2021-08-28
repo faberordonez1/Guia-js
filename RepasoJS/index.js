@@ -23,6 +23,8 @@ console.log(coche);
 document.write(coche.marca);
 coche.mostrarDatos();
 
+console.log(2+4)//
+
 //Promesas
 var saludar = new Promise((resolve, reject) => {  /*resolve=> resultado   reject=>error, no hay resultado */
 
