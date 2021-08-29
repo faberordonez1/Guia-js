@@ -75,11 +75,27 @@
             <p><strong>Viewport </strong>Es el area visible del navegador</p>
             <p>Metaviewport es la etiqueta de metadatos que permite adaptar el contendio de forma adecuada, segun el tipo de pantalla, ya que sin esta etiqueta,  el contenido se reescala para intentar mostrarse como si fuera PC y el website posiblemente no sea legible</p>
 
-
             <pre class="alert alert-dark"><!-- -->
 &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 Width=> Ancho  initiaL-scale =>Zoom Rango (0 a 1)
              </pre>
+
+             <h4>Unidades Relativas (%, em, rem)</h4>
+             <p><strong>Porcentaje: </strong> Unidad que toma tamaño de acuerdo a su elemento padre o contendedor</p>
+             <p> <strong>Viewport (vw,vh) </strong>Unidad relativa con respecto al tamaño del viewport (pantalla visible), puede tomar valores de 0 a 100, cada tamaño indica el porcentaje segun la pantalla</p>
+             <p><strong>REM</strong> Unidad relativa referente al ancentro mas lejano, puede ser Html o en su defecto body, el body por defecto ya tiene asignado un tamaño de fuente en comparación al html</p>
+             <p><strong>EM</strong> Unidad relativa referente al contenedor <u>mas cercano o a el mismo</u>, con tamaño de fuente asignada, esa fuente especificada es igual a 1em, a continuacion podemos ver 1 ejemplo</p>
+             <pre class="alert alert-dark"><!-- -->
+&lt;nav&gt; font-size:16px;
+    &lt;ul&gt; font-size:2em; 32px
+        &lt;li&gt; font-size:1em; 32px
+        &lt;a href=""&gt; &lt;/a&gt; (font-size:.5em; 16px) (padding:2em; 32px)
+            //padding toma el tamaño de acuerdo al font size
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+              </pre>
+
         </div>
 
     </div>
