@@ -96,6 +96,55 @@ Width=> Ancho  initiaL-scale =>Zoom Rango (0 a 1)
 &lt;/nav&gt;
               </pre>
 
+              <h4>Mediaqueris</h4>
+              <p>Son el eje principal del responsive design, anteriormente se utilizaba un subdominio m.dominio y era un website totalmente diferentes para moviles</p>
+              <p>Los mediaqueris se componen de un media type y una o mas condiciones, y tiene  la siguiente estructura</p>
+
+              <pre class="alert alert-dark"><!-- -->
+//Estructura gral
+@media media type and (condición){
+    code CSS
+}
+
+//Pantallas con ancho inferior o igual a 768
+@media screen and (max-width:768px){
+    code CSS
+}
+//Pantallas con ancho de 480 hasta 768
+@media screen and (max-width:768px) and (min-width:480){
+    code CSS
+}
+            </pre>
+
+            <p>Los mediaqueris se pueden utilizar de acuerdo al modelo o necesidad con las siguientes condiciones, mobile first desde pequeno a grande o desktop first de grande hasta pequeño,y las condiciones las podemos relacionar como (min-width = desde) y (max width= hasta)</p>
+            <h5>Mobile first</h5>
+
+            <pre class="alert alert-dark"><!-- -->
+@media screen and (min-width:320px){ }
+@media screen and (min-width:480px){ }
+@media screen and (min-width:768px){ }
+@media screen and (min-width:1024px){ }
+            </pre>
+
+            <h5>Desktop first</h5>
+            <pre class="alert alert-dark"><!-- -->
+@media screen and (max-width:320px){ }
+@media screen and (max-width:480px){ }
+@media screen and (max-width:768px){ }
+@media screen and (max-width:1024px){ }
+            </pre>
+
+            <h5>Formas de insertar mediaqueris</h5>
+            <p>Existen 3 formas de agregar mediaqueris a un proyecto. Enlazando una hoja de estilos condicionada en el head del Html, la segunda opcion es aplicandola en la hoja de estilos ya enlazada y la tercera forma es utlilizando una estiqueta style directamente en el Html</p>
+            <pre class="alert alert-dark"><!-- -->
+1. &lt;link rel="stylesheet" href="css/media.css" media=" screen and (max-width:768px)"&gt;
+
+2. @media screen and (max-width:768px){ }
+
+3.&lt;style&gt;
+    @media screen and (max-width:1024px){ }
+&lt;/style&gt;
+           </pre>
         </div>
 
     </div>
