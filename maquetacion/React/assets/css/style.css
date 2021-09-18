@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Segoe UI", Helvetica, Arial;
+}
+.header{
+    background-color:white;
+    border-top: 4px solid #61dafb;
+    padding: .6em 0;
+    display:flex;
+    justify-content:space-between;
+}
+.header_logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 2em;
+}
+/*Animacion Girar logo react*/
+.header_logo img {
+    /*tiempo nombre iteracion direccion*/
+    animation: 5s girar infinite linear;
+  }
+  
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.header_navbar{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.header_navbar ul{
+    display:flex;
+    align-items:center;
+}
+.header_navbar ul>li{
+    list-style:none;
+    padding: 1em .5em;
+}
+.container{
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3em;
+}
+@media (max-width: 768px){
+    .header{
+        display:block;
+    }
+    .container{
+    
+    }
+}
