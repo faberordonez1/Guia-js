@@ -10,7 +10,7 @@
 .header{
     background-color:var(--blanco);
     border-top: 4px solid var(--colorPrincipal);
-    padding: .6em 0;
+    padding: .6em 3em;
     display:flex;
     justify-content:space-between;
 }
@@ -18,7 +18,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 /*Animacion Girar logo react*/
 .header_logo img {
@@ -98,14 +98,10 @@
     width:100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 3em;
 }
 @media (max-width: 768px){
     .header{
         font-size:12px;
-    }
-    .container{
-        padding:0 1.5em;
     }
 }
 @media (max-width: 480px){
@@ -113,12 +109,16 @@
         display:block;
         font-size: initial;
     }
-    .container{
-        padding:0;
+    .slider{
+        font-size: 12px;
     }
-
 }
 @media (max-width:320px) {
-    
+    .container{
+        font-size:13px;
+    }
+    .slider h1{
+        font-size: 1.7em;
+    }    
 }
     
