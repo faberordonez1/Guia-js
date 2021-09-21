@@ -89,6 +89,13 @@
     color: white;
     background-color:#444;
 }
+.hero{
+    display: flex;
+    padding: 3em;
+}
+.hero_articulos{
+    width: 70%;
+}
 .container{
     display: inherit;
     align-items: inherit;
@@ -103,14 +110,14 @@
     .header{
         font-size:12px;
     }
+    .slider{
+        font-size: 12px;
+    }
 }
 @media (max-width: 480px){
     .header{
         display:block;
         font-size: initial;
-    }
-    .slider{
-        font-size: 12px;
     }
 }
 @media (max-width:320px) {
