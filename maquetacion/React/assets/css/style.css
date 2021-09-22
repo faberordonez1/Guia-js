@@ -97,9 +97,25 @@
 .hero{
     display: flex;
     padding: 3em;
+    text-align: center;
 }
 .hero_articulos{
     width: 70%;
+    min-height: 28em;
+}
+.hero_sidebar>div{
+    background: #f1f1f1;
+    padding:1.5em;
+    margin: 1em;
+}
+.hero_sidebar h3{
+    text-transform: uppercase;
+}
+.sidebar_btn{
+    background: rgb(23,150,19);
+}
+footer{
+    text-align: center;
 }
 .container{
     display: inherit;
@@ -117,6 +133,9 @@
     }
     .slider{
         font-size: 12px;
+    }
+    .hero{
+        display: block;
     }
 }
 @media (max-width: 480px){
