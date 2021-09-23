@@ -133,6 +133,9 @@
 }
 footer{
     text-align: center;
+    background-color: #f1f1f1;
+    height: 3em;
+    line-height: 3em;
 }
 .container{
     display: inherit;

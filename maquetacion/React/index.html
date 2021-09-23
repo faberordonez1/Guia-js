@@ -36,6 +36,16 @@
             <section class="hero_articulos">
                 <h2>Ultimos articulos</h2>
                 <!-- Listado articulos -->
+                    <article class="article_item">
+                        <div class="article_imageWrap">
+                            <img src="https://loremflickr.com/500/300/" alt="" srcset="">
+                        </div>
+                        <h2>Articulo n</h2>
+                        <span class="article_date">
+                            Hace 5 minutos
+                        </span>
+                        <a href="#">Ver Mas...</a>
+                    </article>
             </section>
 
             <aside class="hero_sidebar">
@@ -56,9 +66,13 @@
     </div>
     <footer>
         <div class="container">
-            <p>&copy  Landing page de react por Faber Ordoñez</p>
+            <p>&copy  Landing Page React Coded by Faber OrdoñeZ</p>
         </div>
     </footer>
+    <script>
+        let articulo = getElementByClassName("article_item").[0][0];
+        console.log(articulo);
+    </script>
     
 </body>
 </html>
