@@ -81,6 +81,7 @@
     line-height: 3em;
     text-align: center;
     text-decoration: none;
+    font-weight: 500;
     margin:1.5em;
     text-transform: uppercase;
     box-shadow: 0px 0px 5px #444;
@@ -110,9 +111,25 @@
 }
 .hero_sidebar h3{
     text-transform: uppercase;
+    margin-bottom: 1.5em;
 }
-.sidebar_btn{
+.sidebar_btn_create{
     background: rgb(23,150,19);
+    color: white;
+    max-width: 70%;
+    margin: 1em auto; 
+}
+.hero_sidebar_item_search input[type="text"]{
+    height: 3em;
+    width: 100%;
+    margin-top:1em;
+    border: 1px solid gray;
+}
+.hero_sidebar_item_search input[type="submit"]{
+    background-color: #000;
+    color: white;
+    margin:1.2em auto;
+    font-size: 1em;
 }
 footer{
     text-align: center;
@@ -137,14 +154,26 @@ footer{
     .hero{
         display: block;
     }
+    .hero_sidebar{
+        width:70%;
+        margin: 0 auto;
+    }
 }
 @media (max-width: 480px){
     .header{
         display:block;
         font-size: initial;
     }
+    .hero_sidebar{
+        width: 100%;
+        font-size: 13px;
+    }
 }
 @media (max-width:320px) {
+    .hero{
+        font-size: 9px;
+        padding:0 1em;
+    }
     .container{
         font-size:13px;
     }
