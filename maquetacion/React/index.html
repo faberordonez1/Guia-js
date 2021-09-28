@@ -70,8 +70,16 @@
         </div>
     </footer>
     <script>
-        let articulo = document.getElementsByClassName("article_item")[0];
-        console.log(articulo);
+        window.addEventListener("load",function(event){
+            var template = document.getElementsByClassName("article_item")[0];
+            var articulo = document.querySelector(".hero_articulos");/*contenedor padre*/
+            
+            for (let index = 1; index <= 5; index++) {
+                var clonado = template.cloneNode(true);
+                articulo.appendChild(clonado);
+                console.log(index);
+            }
+        })
     </script>
     
 </body>
