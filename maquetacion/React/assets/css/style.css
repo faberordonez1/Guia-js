@@ -106,7 +106,8 @@
 }
 .article_item{
     display: flex;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+    margin-top: 3em;
 }
 .article_imageWrap{
     width: 25%;
@@ -118,6 +119,13 @@
 .article_item_detail{
     width: 75%;
     text-align: left;
+    padding-left:1em;
+}
+.article_item_detail a{
+    display: block;
+    text-decoration: none;
+    color:#595959;
+    width: 30%;
 }
 .hero_sidebar>div{
     background: #f1f1f1;
