@@ -10,6 +10,7 @@
 .header{
     background-color:var(--blanco);
     border-top: 4px solid var(--colorPrincipal);
+    border-bottom: 1px lightgray solid;
     padding: .6em 3em;
     display:flex;
     justify-content:space-between;
@@ -104,10 +105,13 @@
     width: 70%;
     min-height: 28em;
 }
+.subheader{
+    font-size: 2.5em;
+}
 .article_item{
     display: flex;
-    margin-bottom: 2em;
     margin-top: 3em;
+    gap: 1.5em;
 }
 .article_imageWrap{
     width: 25%;
@@ -115,17 +119,23 @@
 .article_imageWrap img{
     width: 100%;
     height: 100%;
+    object-fit: cover;/*centrar imagen*/
 }
-.article_item_detail{
-    width: 75%;
+.article_item_description{
+    width: auto;
     text-align: left;
-    padding-left:1em;
 }
-.article_item_detail a{
+.article_item_description a{
     display: block;
     text-decoration: none;
     color:#595959;
-    width: 30%;
+    padding-top: 1em;
+}
+.article_date{
+    color: gray;
+}
+.article_item_description a:hover{
+    text-decoration: underline;
 }
 .hero_sidebar>div{
     background: #f1f1f1;
@@ -170,19 +180,43 @@ footer{
     max-width: 1200px;
     margin: 0 auto;
 }
+/*Detail*/
+.hero_articulos_detail{
+    width:100%;
+}
+.article_item_detail{
+    flex-wrap: wrap;
+    text-align: initial;
+    margin-top: 0;
+}
+.article_item_detail .article_imageWrap{
+    width: 100%;
+    height: 16em;
+}
+.article_item_detail p{
+    margin: 1em auto;
+}
+.article_item_detail h1{
+    font-size: 1.8em;
+    margin-bottom: .8em;
+}
 @media (max-width: 768px){
     .header{
         font-size:12px;
+    }
+    .subheader{
+        font-size:1.7em;
     }
     .slider{
         font-size: 12px;
     }
     .hero{
         display: block;
+        padding:1.2em;
     }
     .hero_sidebar{
         width:70%;
-        margin: 0 auto;
+        margin: 4em auto;
     }
     .hero_articulos{
         width: 100%;
@@ -197,6 +231,12 @@ footer{
         width: 100%;
         font-size: 13px;
     }
+    .article_imageWrap{
+        width: 35%;
+    }
+    .article_item{
+        font-size: 13px;
+    }  
 }
 @media (max-width:320px) {
     .hero{
@@ -208,6 +248,12 @@ footer{
     }
     .slider h1{
         font-size: 1.7em;
-    }    
+    }
+    .article_item{
+        font-size: 10px;
+    } 
+    footer p{
+        font-size:9px ;
+    } 
 }
     
