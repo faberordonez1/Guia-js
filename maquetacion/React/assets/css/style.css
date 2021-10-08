@@ -48,6 +48,10 @@
     list-style:none;
     padding: 1em .5em;
 }
+.header a{
+    color: #444;
+    text-decoration: none;
+}
 .slider{
     font-size:15px;
     height:20em;
