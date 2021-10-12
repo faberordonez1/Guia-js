@@ -156,17 +156,47 @@
     max-width: 70%;
     margin: 1em auto; 
 }
-.hero_sidebar_item_search input[type="text"]{
+input[type="text"],textarea{
     height: 3em;
     width: 100%;
     margin-top:1em;
     border: 1px solid gray;
 }
-.hero_sidebar_item_search input[type="submit"]{
+input[type="submit"]{
     background-color: #000;
     color: white;
     margin:1.2em auto;
     font-size: 1em;
+}
+textarea{
+    min-height: 10em;
+    max-height: 17em;
+    max-width: 100%;
+    min-width: 100%;
+    transition: 300ms all;
+}
+label{
+    display: block;
+    text-align: left;
+    margin-top: 1em;
+}
+.formulario{
+    width: 70%;
+    margin: 0 auto;
+}
+.formulario .sidebar_btn_create{
+    margin: 1.5em 0;
+    background: rgb(23,150,19);
+    color: white;
+}
+.radiobuttons{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+.radiobuttons input{
+    margin-left:1.5em;
+    margin-right: .5em;
 }
 footer{
     text-align: center;
