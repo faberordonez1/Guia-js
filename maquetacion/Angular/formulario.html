@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Landing angular</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html">
+                <div class="header_logo">
+                    <img src="assets/images/angular.svg" alt="logo">
+                    <span>Landing<strong>Angular</strong>  </span>
+                </div>
+            </a>
+            <nav class="header_navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="article.html">Blog</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="../react/index.html">React</a></li>
+                    <li><a href="../vue/index.html">Vue</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <section class="hero_articulos hero_articulos">
+                <h1 class="subheader">Formulario</h1>
+                <form action="" class="formulario">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Descripcion</label>
+                        <textarea name="bio"></textarea>
+                    </div>
+                    <div class="form-group radiobuttons">
+                        <input type="radio" name="genero" value="hombre">Hombre
+                        <input type="radio" name="genero" value="mujer">Mujer
+                        <input type="radio" name="genero" value="otro">Otro
+                    </div>
+                    <input class="sidebar_btn_create btn" type="submit" value="Enviar">
+                </form>
+            </section>
+            <aside class="hero_sidebar">
+                <div class="hero_sidebar_item_create">
+                    <h3>Puedes hacer esto</h3>
+                    <a href="#" class="sidebar_btn_create btn">Crear Articulo</a>
+                </div>
+                <div class="hero_sidebar_item_search">
+                    <h3>Buscador</h3>
+                    <p>Encuentra los articulos que buscas</p>
+                    <form action="" method="post">
+                        <input type="text" name="" id="">
+                        <input type="submit" value="Buscar" class="btn">
+                    </form>
+                </div>
+            </aside>
+        </div>      
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy  Landing Page angular Coded by Faber OrdoñeZ</p>
+        </div>
+    </footer>    
+</body>
+</html>
