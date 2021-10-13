@@ -52,6 +52,9 @@
     color: #444;
     text-decoration: none;
 }
+.header_navbar ul>li a:hover{
+    color: var(--colorPrincipal);
+}
 .slider{
     font-size:15px;
     height:20em;

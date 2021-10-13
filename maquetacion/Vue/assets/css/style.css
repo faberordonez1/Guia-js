@@ -1,5 +1,5 @@
 :root{
-    --colorPrincipal:#00d8ff;
+    --colorPrincipal:#09a330;
     --blanco:#fff;
 }
 *{
@@ -24,16 +24,29 @@
 /*Animacion Girar logo react*/
 .header_logo img {
     /*tiempo nombre iteracion direccion*/
-    animation: 5s girar infinite linear;
+    animation: 8s rebote infinite linear;
+    width: 64px;
   }
   
-  @keyframes girar {
-    from {
-      transform: rotate(0deg);
+  @keyframes rebote {
+      30%{
+          transform: rotate(1turn);
+      }
+      100%{
+          transform: rotate(0turn);
+      }
+    /* 0% {
+      transform: rotate(90deg);
     }
-    to {
+    33% {
       transform: rotate(360deg);
     }
+    66% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    } */
   }
 .header_navbar{
     display:flex;
@@ -52,6 +65,9 @@
     color: #444;
     text-decoration: none;
 }
+.header_navbar ul>li a:hover{
+    color: var(--colorPrincipal);
+}
 .slider{
     font-size:15px;
     height:20em;
@@ -62,14 +78,8 @@
     justify-content:space-around;
     align-items:center;
 
-    background: rgba(73,155,234,1);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(0,216,255,1) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(0,216,255,1)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(0,216,255,1) 100%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(0,216,255,1) 100%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(0,216,255,1) 100%);
-    background: radial-gradient(ellipse at center, rgba(73,155,234,1) 0%, rgba(0,216,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#00d8ff', GradientType=1 );
+    background: rgb(103,230,135);
+    background: radial-gradient(circle, rgba(103,230,135,1) 0%, rgba(9,163,48,1) 67%, rgba(9,163,48,1) 100%);
 }
 .slider h1{
     margin: auto;
@@ -208,14 +218,8 @@ footer{
     font-weight: 500;
     margin-top: 9vh;
 
-    background: rgba(73,155,234,1);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(0,216,255,1) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(0,216,255,1)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(0,216,255,1) 100%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(0,216,255,1) 100%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(0,216,255,1) 100%);
-    background: radial-gradient(ellipse at center, rgba(73,155,234,1) 0%, rgba(0,216,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#00d8ff', GradientType=1 );
+    background: rgb(103,230,135);
+    background: radial-gradient(circle, rgba(103,230,135,1) 0%, rgba(9,163,48,1) 67%, rgba(9,163,48,1) 100%);
 }
 .container{
     display: inherit;
